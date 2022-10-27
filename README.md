@@ -81,7 +81,7 @@ Lo primero que tenemos que hacer es importar el modulo de Directorio Activo
 <pre><code>Import-Module ActiveDirectory</code></pre>
 
 Aunque sea un script básico, a mi me gusta definir la ruta y el archivo de origen en una variable. En este caso vamos a usar un archivo .csv como origen de los datos que necesitaremos para crear los usuarios. <br>
-Empezamos indicando cual será el directorio de origen y para este script elegiremos que el directorio sea el mismo donde se encuentra nuestro archio .ps1 con el script. Para ello usaremos la variable automática de powershell $PSScriptRoot y lo meteremos en la variable $directorio_origen:
+Empezamos indicando cual será el directorio de origen y para este script elegiremos que el directorio sea el mismo donde se encuentra nuestro archivo .ps1. Para ello usaremos la variable automática de powershell $PSScriptRoot y lo meteremos en la variable $directorio_origen:
 <pre><code>$directorio_origen = $PSScriptRoot</code></pre>
 Y ahora le decimos cómo se llamará el archivo de donde cargaremos los datos y lo meteremos en la variable $archivo_origen concatenado con un "+" el valor de la variable $directorio_origen con un string con el nombre que queramos ponerle al archivo precedido de "\\" para que complete la dirección del archivo:
 <pre><code>$archivo_origen = $directorio_origen+"\users.csv"</code></pre>
