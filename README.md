@@ -1,8 +1,8 @@
 # PowerShell-Create AD User
-Cómo crear un usuario en Directorio Activo con PowerShell<br>
-How to create an AD user by powershell
+Cómo crear usuarios en Directorio Activo con PowerShell desde un archivo<br>
+How to create AD users by powershell from file
 
-Este es un script básico para crear un usuario en AD.
+Este es un script básico para crear masivamente usuarios en AD desde un archivo .csv con los datos necesarios para darlos de alta..
 
 # Lista de propiedades
 
