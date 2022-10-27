@@ -89,10 +89,9 @@ New-ADUser -Name $uname `
 -SamAccountName $_.samAccountName `
 -Enabled $true `
 -Description $descript `
--ScriptPath "login.bat" `
 -Path $_.OU `
 -AccountPassword (ConvertTo-SecureString $_.Password -AsPlainText -force)
-write-host $uname
+write-host $uname Creado
 }
 
 #Info in console: the script has finished
